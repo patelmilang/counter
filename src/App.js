@@ -7,11 +7,11 @@ function App() {
 
   const handleIncreament = (e) => {
     e.preventDefault();
-    setCounter(counter + 3);
+    setCounter((prevCount) => prevCount + 1);
   };
   const handleDecreament = (e) => {
     e.preventDefault();
-    setCounter(counter - 2);
+    setCounter((prevCount) => prevCount - 1);
   };
   return (
     <div>
